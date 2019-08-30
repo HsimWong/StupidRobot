@@ -1,0 +1,105 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.21.1.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: yimao qian_, yimaoqian, LIC=6XJCX-HNQUI-GM299-4MFAM-DMA3J-G996B
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.21a
+Toolchain Path:  D:\SOFTWARE\MDK\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 3 (build 300)
+Assembler:       Armasm.exe V5.06 update 3 (build 300)
+Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
+Library Manager: ArmAr.exe V5.06 update 3 (build 300)
+Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
+CPU DLL:         SARMCM3.DLL V5.21a
+Dialog DLL:      DARMSTM.DLL V1.66.0.1
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TARMSTM.DLL V1.65.0.0
+ 
+<h2>Project:</h2>
+C:\Users\qian_\Desktop\四足\循迹程序（原码）\解算\USER\USART.uvprojx
+Project File Date:  08/21/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'D:\SOFTWARE\MDK\ARM\ARMCC\Bin'
+Rebuild target 'USART'
+compiling main.c...
+main.c(79): warning:  #223-D: function "uart1_init" declared implicitly
+  	uart1_init(9600);	 //串?诔?始化为115200
+main.c(80): warning:  #223-D: function "tri_list_init" declared implicitly
+  	tri_list_init();
+main.c(81): warning:  #223-D: function "Initial_USART2" declared implicitly
+  	Initial_USART2(9600);
+main.c(72): warning:  #177-D: variable "str" was declared but never referenced
+  	char str[100];
+main.c(74): warning:  #177-D: variable "t" was declared but never referenced
+   	u16 t;  
+main.c(75): warning:  #177-D: variable "len" was declared but never referenced
+  	u16 len;	
+main.c(76): warning:  #177-D: variable "times" was declared but never referenced
+  	u16 times=0;
+main.c: 7 warnings, 0 errors
+compiling system_stm32f10x.c...
+compiling stm32f10x_it.c...
+compiling key.c...
+compiling resovle.c...
+..\HARDWARE\resolve\resovle.c(200): warning:  #940-D: missing return statement at end of non-void function "LFangcalc"
+  }
+..\HARDWARE\resolve\resovle.c(204): warning:  #940-D: missing return statement at end of non-void function "LFx_supportcaulc"
+  }
+..\HARDWARE\resolve\resovle.c(222): warning:  #940-D: missing return statement at end of non-void function "LFx_swingcaulc"
+  }
+..\HARDWARE\resolve\resovle.c(271): warning:  #940-D: missing return statement at end of non-void function "LBangcalc"
+  }
+..\HARDWARE\resolve\resovle.c(275): warning:  #940-D: missing return statement at end of non-void function "LBx_supportcaulc"
+  }
+..\HARDWARE\resolve\resovle.c(293): warning:  #940-D: missing return statement at end of non-void function "LBx_swingcaulc"
+  }
+..\HARDWARE\resolve\resovle.c(342): warning:  #940-D: missing return statement at end of non-void function "RFangcalc"
+  }
+..\HARDWARE\resolve\resovle.c(346): warning:  #940-D: missing return statement at end of non-void function "RFx_supportcaulc"
+  }
+..\HARDWARE\resolve\resovle.c(364): warning:  #940-D: missing return statement at end of non-void function "RFx_swingcaulc"
+  }
+..\HARDWARE\resolve\resovle.c(408): warning:  #940-D: missing return statement at end of non-void function "RBangcalc"
+  }
+..\HARDWARE\resolve\resovle.c(412): warning:  #940-D: missing return statement at end of non-void function "RBx_supportcaulc"
+  }
+..\HARDWARE\resolve\resovle.c(430): warning:  #940-D: missing return statement at end of non-void function "RBx_swingcaulc"
+  }
+..\HARDWARE\resolve\resovle.c: 12 warnings, 0 errors
+compiling trilist.c...
+..\HARDWARE\TRIANGLE\trilist.c(20): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\TRIANGLE\trilist.c: 1 warning, 0 errors
+compiling delay.c...
+assembling startup_stm32f10x_hd.s...
+compiling usart.c...
+..\SYSTEM\usart\usart.c(212): warning:  #177-D: variable "NVIC_InitStructure" was declared but never referenced
+  	NVIC_InitTypeDef NVIC_InitStructure;        
+..\SYSTEM\usart\usart.c: 1 warning, 0 errors
+compiling core_cm3.c...
+compiling sys.c...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_tim.c...
+linking...
+Program Size: Code=30056 RO-data=936 RW-data=296 ZI-data=6320  
+FromELF: creating hex file...
+"..\OBJ\USART.axf" - 0 Error(s), 21 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\qian_\Desktop\四足\循迹程序（原码）\解算\USER\RTE
+  D:\SOFTWARE\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>
