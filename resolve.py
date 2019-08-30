@@ -1,9 +1,8 @@
 import sensor
 from math import *
-UPSTARIS = 0                         # or 1
-
-
-
+import time
+from overall import *
+                      # or 1
 RB = []
 RBfai1 = None
 RBfai2 = None
@@ -15,11 +14,9 @@ RFfai2 = None
 RFfai3 = None
 RFfai = None
 
-S = None
-a = None
+a = 308
 u = None
-h = None
-b_RF = [] 
+
 RFang = None
 RFx_support = None
 RFx_swing = None 
@@ -28,7 +25,6 @@ LFfai1 = None
 LFfai2 = None
 LFfai3 = None 
 LFfai = None
-FOOT[3]
 
 FLAG = 0
 
@@ -143,3 +139,5 @@ def  LFcalc(x, y, z):
 # 0xff $(int)(LF2[])(24) $(int)(LF1[])(24) $(int)(LF0[])(24) $RF1 $RF2 $RF0 $RB2 $RB1 $RB0 $LB(2, 1, 0) upstairs(judge)
 def send():
 	send_array = [0xff,].extend(LF2)
+
+def main():
